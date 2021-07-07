@@ -6,6 +6,7 @@ def divisors(n):
 def run():
 
     n = input("Digit a number: ")
+    assert int(n) >= 0, "Integer must be non-negative"
     assert n.isnumeric(), "An integer is required"
     divisors(int(n))
     # print("Exiting...")
